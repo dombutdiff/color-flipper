@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+.name span {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  width: 100%; /* Adjust width to full width */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4px; /* Adjust row gap for better spacing */
+  column-gap: 4px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.navbar a {
+  flex: 1; /* Take full width of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.navbar a.simple,
+.navbar a.hex {
+  flex-basis: 50%; /* Equal width for both links */
+}
+
+.navbar a.simple {
+  border: 1px solid black;
+  color: black;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar a.hex {
+  border: 1px solid black;
+  color: black;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar a.simple:hover,
+.navbar a.hex:hover,
+.generate-btn button:hover {
+  color: white;
+  background-color: black;
+}
+
+.generate-btn {
+  width: 100%; /* Adjust width to full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generate-btn button {
+  width: 100%;
+  border: 1px solid black;
+  background: none;
+  padding: 12px;
+  font-size: 14px; /* Adjust font size for smaller screens */
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
